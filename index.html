@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimHati</title>
+
+     <!-- Bootstrap CSS 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/10dac0b7e0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="lightbox.min.js"></script>
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!---Top Bar-->
+    <section id="topbar" class="d-none d-lg-block"> 
+        <div class=" container d-flex">
+            <div class="contact-info mr-auto">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:julia.bordes@gmail.com" target="_blank" rel="noopener noreferrer" >julia.bordes@gmail.com</a>
+                <i class="fas fa-phone"></i>06.00.00.00.00
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/juliabordes/?originalSubdomain=fr" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/julia_bordes" target="_blank" rel="noopener noreferrer" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/lesprit_simhati/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+    <!---End of Top Bar-->
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-color" id="myNavBar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="./img/logo.png" alt="logo" style="width: 150px; height: 100px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>Menu
+            </button>
+            <div class="collapse navbar-collapse" id="MyNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Tarif</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End of Navbar-->
+
+    <!--Hero Section-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col bo-padding">
+                <div id="hero-slider" class="carousel slide" data-ride="carousel">
+                    <!---->
+                    <div class="carousel-inner">
+                        <div class="carousel-item slide-1 active">
+                            <div class="carousel-caption mb-5 text-right">
+                                <h1 class="display-3 text-capitalize mb-2 text-bold">
+                                    SimHati
+                                </h1>
+                                <a href="#" class="btn btn-lg mb-5 text-uppercase site-btn sb-gradient">
+                                    Rejoins-nous
+                                </a>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="carousel-item slide-2">
+                            <div class="carousel-caption mb-5 text-right">
+                                <h1 class="display-3 text-capitalize mb-2 text-bold">
+                                </h1>
+                                <a href="#" class="btn btn-lg mb-5 text-uppercase site-btn sb-gradient">
+                                    Rejoins-nous
+                                </a>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="carousel-item slide-3">
+                            <div class="carousel-caption mb-5 text-right">
+                                <h1 class="display-3 text-capitalize mb-2 text-bold">
+                                    
+                                </h1>
+                                <a href="#" class="btn btn-lg mb-5 text-uppercase site-btn sb-gradient">
+                                    Rejoins-nous
+                                </a>
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                    <a href="#hero-slider" class="carousel-control-prev" role="button" data-slide="prev">
+                        <i class="fas fa-arrow-circle-left"></i>
+                    </a>
+                    <a href="#hero-slider" class="carousel-control-next" role="button" data-slide="next">
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Hero Section-->
+
+    <!-- About -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>
+                    Welcome to SimHati
+                </h2>
+                <p>
+                    Qu’est ce que la sophrologie ? 
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <iframe width="540" height="350" src="https://www.youtube.com/embed/ZIKh7aevY3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-item">
+                        <div class="about-icon">
+                            <i class="fab fa-diaspora fa-2x"></i>
+                        </div>
+                        <div class="about-text">
+                            <h4>Une thérapie brève</h4>
+                            <p>Elle est centrée sur votre vécu, vos perceptions. Elle vous considère dans votre globalité. Elle ne cherche pas de pourquoi à votre symptôme. La sophrologie s’intéresse au phénomène c’est-à-dire, à ce qui apparaît et se vit. L’absence de démarche analytique vous place dans la recherche de votre solution (la seule qui compte ) sur un temps limité. Elle passe par la perception de son corps.</p>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="about-item">
+                        <div class="about-icon">
+                            <i class="fas fa-cannabis fa-2x"></i>
+                        </div>
+                        <div class="about-text">
+                            <h4>Une méthode simple et accessible</h4>
+                            <p>Elle fait appel à des techniques de respiration, de relaxation et s’appuie sur votre imagination. Progressive, elle amène chacun à développer une attention de qualité pour agir en conséquence. Elle part de la connaissance du corps humain pour rééquilibrer en douceur le système nerveux. Nous la devons aux travaux du neuro-psychiatre Caycedo.</p>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="about-item">
+                        <div class="about-icon">
+                            <i class="fab fa-d-and-d fa-2x"></i>
+                        </div>
+                        <div class="about-text">
+                            <h4>Ses domaines d'application</h4>
+                            <p>La sophrologie vous invite à reconsidérer vos réflexes et à explorer en conscience vos envies comme: 
+                            <br> • Développer une meilleure qualité de relation à soi et aux autres (gestion des émotions).
+                            <br> • Se préparer à un évènement particulier et le vivre dans les meilleures conditions (entretien professionnel, examen, compétition, prise de parole,..).
+                            <br> • Être acteur de sa santé (en prévention) et améliorer sa qualité de vie face à certains troubles (insomnie, anxiété, phobies, troubles psychosomatiques divers) pour les dépasser.
+                            </p>
+                        </div>
+                    </div>
+                    <!---->
+                    <a href="" class="site-btn sb-gradient mt-5"> Voir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of About -->
+
+    <!---Services Section-->
+    <section class="services section-bg pt-5">
+        <div class="container">
+            <div class=" section-title">
+                <h2> Services</h2>
+                <p>Voici les différents services que je propose.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="icon-box">
+                        <div class="icon">
+                      <i class="fas fa-cannabis" style="color:#ff689b;"></i>
+                        </div>
+                        <h4 class="title">
+                            <a href="">Ateliers en groupe de sophrologie et de yoga </a></h4>
+                            <p class="description">
+                                <br>
+                                <br>
+                            </p>
+                        
+                    </div>
+                    <!----->
+                  
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="icon-box">
+                      <div class="icon">
+                    <i class="fab fa-d-and-d" style="color:#e9bf06;"></i>
+                      </div>
+                      <h4 class="title">
+                          <a href="">Accompagnement individuel en sophrologie</a></h4>
+                          <p class="description">
+                              <br>
+                          </p>
+                      
+                  </div>
+                  <!----->
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="icon-box">
+                  <div class="icon">
+                <i class="fab fa-envira" style="color:#3fcdc7;"></i>
+                  </div>
+                  <h4 class="title">
+                      <a href="">Cours de yoga
+                    </a></h4>
+                      <p class="description">
+                          <br>
+                          <br>
+                          <br>
+
+                      </p>
+                  
+              </div>
+              <!----->
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="icon-box">
+              <div class="icon">
+            <i class="fas fa-feather-alt" style="color:#41cf2e;"></i>
+              </div>
+              <h4 class="title">
+                  <a href="">Weekend ou semaine immersive de reconnexion à soi</a></h4>
+                  <p class="description">.
+                  </p>
+              
+          </div>
+          <!----->
+          </div>
+          <div class="col-lg-4 col-md-6">
+              <div class="icon-box">
+                  <div class="icon">
+                <i class="fas fa-leaf" style="color:#22ffed;"></i>
+                  </div>
+                  <h4 class="title">
+                      <a href="">Parcours en autonomie </a></h4>
+                      <p class="description">
+                          <br>
+                          <br>
+                          <br>
+                      </p>
+                  
+              </div>
+              <!----->
+              </div>
+              <div class="col-lg-4 col-md-6">
+                  <div class="icon-box">
+                      <div class="icon">
+                    <i class="fas fa-life-ring" style="color:#4680ff;"></i>
+                      </div>
+                      <h4 class="title">
+                          <a href="">Podcast informationnel sur la spiritualité</a></h4>
+                          <p class="description">
+                            <br>
+                            <br>
+                          </p>
+                      
+                  </div>
+                  <!----->
+                  </div>
+    </section>
+    <!---End of the Services Section-->
+    <!---Pricing Section-->
+    <section class="pricing-section pt-5">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2> Mes offres</h2>
+                <p>Voici mes différents offres </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="price-item beginner">
+                        <div class="price-top">
+                            <h4>Ateliers en groupe de sophrologie et de yoga </h4>
+                        </div>
+                        <div class="price-sec">
+                            <h3>20€</h3>
+                            <p>par personne</p>
+                        </div>
+                        <ul>
+                            <li>Ateliers en groupe</li>
+                            <li>peut aller jusqu'a 70 €</li>
+                            <li>en fonction de l’activité</li>
+                            <li><br></li>
+                        </ul>
+                        <a href=""class="site-btn sb-gradient">Voir plus</a>
+                    </div>
+                </div>
+                <!----->
+                <div class="col-lg-3 col-sm-6">
+                  <div class="price-item intermediate">
+                      <div class="price-top">
+                          <h4>Accompagnement individuel en sophrologie</h4>
+                      </div>
+                      <div class="price-sec">
+                          <h3>340€</h3>
+                          <p>par personne</p>
+                      </div>
+                      <ul>
+                          <li>Pack de 6</li>
+                          <li><br></li>
+                          <li><br></li>
+                          <li><br></li>
+                          
+                          
+                      </ul>
+                      <a href=""class="site-btn sb-gradient">voir plus</a>
+                  </div>
+              </div>
+              <!----->
+                <!----->
+                <div class="col-lg-3 col-sm-6">
+                  <div class="price-item intermediate">
+                      <div class="price-top">
+                          <h4>Accompagnement individuel en sophrologie</h4>
+                      </div>
+                      <div class="price-sec">
+                          <h3>540€</h3>
+                          <p>par personne</p>
+                      </div>
+                      <ul>
+                          <li>Pack de 10</li>
+                          <li><br></li>
+                          <li><br></li>
+                          <li><br></li>
+                          
+                          
+                      </ul>
+                      <a href=""class="site-btn sb-gradient">voir plus</a>
+                  </div>
+              </div>
+              <!----->
+              <div class="col-lg-3 col-sm-6">
+                  <div class="price-item advanced">
+                      <div class="price-top">
+                          <h4>Cours de yoga </h4>
+                      </div>
+                      <div class="price-sec">
+                          <h3>18€</h3>
+                          <p>Par personne</p>
+                      </div>
+                      <ul>
+                          <li>cours à domicile</li>
+                          <li>cours en groupe</li>
+                          <li><br></li>
+                          <li><br></li>
+
+                      </ul>
+                      <a href=""class="site-btn sb-gradient">voir plus</a>
+                  </div>
+              </div>
+              <!----->
+              <div class="col-lg-3 col-sm-6">
+                  <div class="price-item professional">
+                      <div class="price-top">
+                          <h4>Weekend immersivede reconnexion à soi </h4>
+                      </div>
+                      <div class="price-sec">
+                          <h3>400€</h3>
+                          <p>Par personne</p>
+                      </div>
+                      <ul>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                      </ul>
+                      <a href=""class="site-btn sb-gradient">Voir plus</a>
+                  </div>
+              </div>
+              <!----->
+              <!----->
+              <div class="col-lg-3 col-sm-6">
+                  <div class="price-item professional">
+                      <div class="price-top">
+                          <h4>Semaine immersive de reconnexion à soi </h4>
+                      </div>
+                      <div class="price-sec">
+                          <h3>820€</h3>
+                          <p>Par personne</p>
+                      </div>
+                      <ul>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                      </ul>
+                      <a href=""class="site-btn sb-gradient">Voir plus</a>
+                  </div>
+              </div>
+              <!----->
+              <!----->
+              <div class="col-lg-3 col-sm-6">
+                  <div class="price-item professional">
+                      <div class="price-top">
+                          <h4>Parcours en autonomie sous forme de podcasts </h4>
+                      </div>
+                      <div class="price-sec">
+                          <h3>99€</h3>
+                          <p>Par parcours</p>
+                      </div>
+                      <ul>
+                          <li><br></li>
+                          <li><br></li>
+                          <li><br></li>
+                          <li><br></li>
+                      </ul>
+                      <a href=""class="site-btn sb-gradient">Voir plus</a>
+                  </div>
+              </div>
+              <!----->
+              <!----->
+              <div class="col-lg-3 col-sm-6">
+                  <div class="price-item professional">
+                      <div class="price-top">
+                          <h4>Podcast informationnel sur la spiritualité </h4>
+                      </div>
+                      <div class="price-sec">
+                          <h3>gratuit</h3>
+                          <p></p>
+                      </div>
+                      <ul>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                        <li><br></li>
+                      </ul>
+                      <a href=""class="site-btn sb-gradient">Voir plus</a>
+                  </div>
+              </div>
+              <!----->
+            </div>
+        </div>
+    </section>
+    <!---End of the Pricing Section-->
+    <!---GAllery SEction-->
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-5">
+                    <h1 class="text-dark text-uppercase">
+                        Galerie
+                    </h1>
+                </div>
+
+            </div>
+            <!------>
+            <div class="row mb-4 first-row align-items-end">
+                <div class="col-lg-3">
+                  <img src="./img/8.jpg"class="img-thumbnail gallery" >
+                  </a>
+                </div>
+                <!----->
+                <div class="col-lg-3">
+                <img src="./img/16.jpg"class="img-thumbnail gallery">
+                </a>
+              </div>
+              <!----->
+              <div class="col-lg-3">
+
+                <img src="./img/14.jpg"class="img-thumbnail gallery">
+                </a>
+              </div>
+              <!----->
+              <div class="col-lg-3">
+                <img src="./img/15.jpg"class="img-thumbnail gallery">
+                </a>
+              </div>
+              <!----->
+            </div>
+            <div class="row mb-4 second-row align-items-end">
+                <div class="col-lg-3">
+                  <img src="./img/18.jpg" class="img-thumbnail gallery">
+                  </a>
+                </div>
+                <!----->
+                <div class="col-lg-3">
+                <img src="./img/20.jpg" class="img-thumbnail gallery">
+                </a>
+              </div>
+              <!----->
+              <div class="col-lg-3">
+                <img src="./img/22.jpg" class="img-thumbnail gallery">
+                </a>
+              </div>
+              <!----->
+              <div class="col-lg-3">
+                <img src="./img/5.jpg" class="img-thumbnail gallery">
+                </a>
+              </div>
+              <!----->
+            </div>
+        </div>
+    </section>
+    <!--End of the Gallery Section-->
+    <!---FAQ-->
+  
+<section id="faq" class="faq section-bg pt-5">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>F.A.Q</h2>
+      <p>Voici mes questions les plus demandés </p>
+    </div>
+
+    <div class="faq-list">
+      <ul>
+        <li>
+          <i class="far fa-question-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Qui suis-je ?<i class="fas fa-chevron-down icon-show"></i>
+              <i class="fas fa-chevron-up icon-close"></i></a>
+          <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+            <p>
+                Depuis toujours, j’avais envie de changer le monde. Je me suis engagée très tôt dans des associations contre la précarité ou encore pour lutter contre le réchauffement climatique. Mon premier rêve était de devenir journaliste pour observer le monde. Ensuite, je me suis orientée vers le privé dans la communication avec toujours pour ambition de changer le monde, je me suis donc orientée vers la RSE et l’ESS à travers l’évènementiel et la communication.
+                <br>
+                J’ai pratiqué pour la première fois la sophrologie à l’âge de 15 ans pour m’aider à gérer mes angoisses à l’école. Je n’ai ensuite jamais cessé d’explorer le monde du yoga et de la méditation. Je pratique le yoga depuis 15 ans et je le pratique quotidiennement. Car je suis convaincue que pour changer le monde encore faut-il être aligné avec soi-même. 
+                <br>
+                Aujourd’hui, je suis sophrologue pour à mon tour guider ceux qui le souhaitent dans la découverte de son corps, de ses sensations, de ses émotions. Je souhaite devenir professeure de yoga. 
+                <br>
+                Aujourd’hui à travers cette offre, j’associe mes compétences en communication et événementiel et mon intérêt pour le développement personnel et la spiritualité dans cette nouvelle activité.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <i class="far fa-question-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Qu'est-ce que je propose<i class="fas fa-chevron-down icon-show"></i><i class="fas fa-chevron-up icon-close"></i></a>
+          <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+            <p>
+                Je propose des outils et des expériences uniques afin de se reconnecter à son soi le plus profond et révéler sa beauté intérieure et  faire rayonner la beauté du monde grâce à la sophrologie et au yoga, ainsi que d’autres techniques en m’alliant à d’autres experts (arts, nutrition, sport, danse…) 
+          </div>
+        </li>
+
+        <li>
+          <i class="far fa-question-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Qu’est ce que la sophrologie ?<i class="fas fa-chevron-down icon-show"></i><i class="fas fa-chevron-up icon-close"></i></a>
+          <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+            <p>
+                La sophrologie est un « entraînement du corps et de l'esprit pour développer sérénité et mieux-être basé sur des techniques de relaxation et d'activation du corps et de l'esprit ». Elle s'adresse à toute personne cherchant à améliorer son existence et développer mieux-être et détente.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <i class="far fa-question-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Avez-vous des diplôme de sophrologie ? <i class="fas fa-chevron-down icon-show"></i><i class="fas fa-chevron-up icon-close"></i></a>
+          <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+            <p>
+                Oui je suis diplômée de l'institut de formation à la sophrologie, une des écoles les plus connues et je passe actuellement une certification d'état appelée RNCP pour avoir une meilleure reconnaissance au niveau de certains établissements. 
+            </p>
+          </div>
+        </li>
+
+        <li >
+          <i class="far fa-question-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Est ce vous etes sophrologue accompagnatrice ou généraliste ?<i class="fas fa-chevron-down icon-show"></i><i class="fas fa-chevron-up icon-close"></i></a>
+          <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+            <p>
+                Je ne sais pas trop ce que veut dire la question. Je peux traiter tous les sujets (gestion du stress, préparation mentale à un événement (sport, examen, ect..), accompagnement à un traitement médical ou encore traitement des addictions ou phobies. 
+
+                Pour l'instant, je souhaite surtout me concentrer sur les problématiques de bien-être au quotidien (gestion du stress, sommeil, etc...), ainsi que la préparation mentale (sportive, artistique, examen). Mais on peut me consulter sur les autres sujets :) 
+                
+                Pour les programmes en autonomie (sous forme de podcasts et vidéos), je vais commencer par un programme "avoir un sommeil réparateur" et un autre "rester confiant sur mes capacités tout au long d'un semi marathon". 
+            </p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</section>
+<!-- End F.A.Q Section -->
+    <!---End of FAQ-->
+   <footer>
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-6 col-md-4">
+                   <div>
+                       <div class="widget">
+                        <a href="index.html" class="navbar-brand"><img src="./img/logo.png" alt="logo" style="width: 150px; height: 100px;"></a>
+                       </div>
+                   </div>
+                   <div>
+                       <div class="widget">
+                           <h5> Information</h5>
+                           <ul>
+                               <li> <a href="index.html">Accueil</a></li>
+                               <li> <a href="contact.html">Contactez-nous</a></li>
+                               <li> <a href="#">Plus d'info</a></li>
+                               <li> <a href="#">Terms & Conditions</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-sm-6 col-md-4">
+                   <div>
+                       <div class="widget">
+                           <h5> SimHati</h5>
+                           <p>L'équilibre du Monde</p>
+                           <ul>
+                               <li>
+                                   <span class="fa-stack fa-lg">
+                                       <i class="fas fa-circle fa-stack-2x"></i>
+                                       <i class="fas fa-calendar-alt fa-stack-1x fa-inverse"></i>
+                                   </span>
+                                   Lundi - Vendredi, 8h00 - 17h00
+                               </li>
+                               <li>
+                                   <span class="fa-stack fa-lg">
+                                      <i class="fas fa-circle fa-stack-2x"></i>
+                                      <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
+
+                                   </span>
+                                   06.00.00.00.00
+                               </li>
+                               <li>
+                                  <span class="fa-stack fa-lg">
+                                     <i class="fas fa-circle fa-stack-2x"></i>
+                                     <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+
+                                  </span>
+                                julia.bordes@gmail.com
+                              </li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-sm-6 col-md-4">
+                   <div>
+                       <div class="widget">
+                           <h5>Localisation</h5>
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.9640072055654!2d2.377283115912857!3d48.89702310593932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d419f2719b9%3A0xb4fb7f221d0dc7cc!2s11%20Rue%20de%20Cambrai%2C%2075019%20Paris!5e0!3m2!1sfr!2sfr!4v1648560770116!5m2!1sfr!2sfr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       </div>
+                   </div>
+                   <div>
+                       <div class="widget">
+                           <h5>Suivez - nous</h5>
+                           <ul class="social-network">
+                               <li class="social-linkedin">
+                                   <a href="https://www.linkedin.com/in/juliabordes/?originalSubdomain=fr" target="_blank" rel="noopener noreferrer">
+                                       <i class="fab fa-linkedin"></i>
+                                   </a>
+                               </li>
+                               <li class="social-twitter">
+                                  <a href="https://twitter.com/julia_bordes" target="_blank" rel="noopener noreferrer">
+                                      <i class="fab fa-twitter"></i>
+                                  </a>
+                              </li>
+                              <li class="social-instagram">
+                                  <a href="https://www.instagram.com/lesprit_simhati/" target="_blank" rel="noopener noreferrer">
+                                      <i class="fab fa-instagram"></i>
+                                  </a>
+                              </li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="sub-footer">
+           <div class="container">
+               <div class="row">
+                   <div class="col-sm-6 col-md-6 col-lg-6">
+                       <div>
+                           <div class="text-left">
+                               <p>&copy; Copyright - SimHati. All rights reserved</p>
+                           </div>
+                       </div>
+                       </div>
+                       <div class="text-right">
+                           <div class="credits">
+                               SimHati
+                           </div>
+                       </div>
+               </div>
+           </div>
+       </div>
+   </footer>
+</body>
+</html>
